@@ -23,5 +23,12 @@ namespace _02_01_setter_newfile.model
         {
             this.side = side;
         }
+        /// <summary>
+        /// S1.05 Side tulajdonság get metódussal.
+        /// </summary>
+        public double Side
+        {
+            get { return side; }
+        }
     }
 }
