@@ -44,5 +44,17 @@ namespace _02_01_setter_newfile.model
                 return district;
             }
         }
+        /// <summary>
+        /// S1.08 A négyzet terület tulajdonsága. Csak olvasható.
+        /// </summary>
+        public double Area
+        {
+            get
+            {
+                double area = side * side;
+                return area;
+            }
+        }
+
     }
 }
