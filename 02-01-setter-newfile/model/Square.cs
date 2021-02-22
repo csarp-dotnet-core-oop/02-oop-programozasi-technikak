@@ -10,5 +10,10 @@ namespace _02_01_setter_newfile.model
     /// </summary>
     class Square
     {
+        /// <summary>
+        /// S1.03 A négyzet oldala.
+        /// </summary>
+        private double side;
+
     }
 }
