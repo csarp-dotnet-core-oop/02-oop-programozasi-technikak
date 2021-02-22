@@ -25,10 +25,13 @@ namespace _02_01_setter_newfile.model
         }
         /// <summary>
         /// S1.05 Side tulajdonság get metódussal.
+        /// S1.06 Side tulajdonság set  metódussal.
+        ///       A négyzet oldalát leolvasni (get) és módosítani is lehet (set).
         /// </summary>
         public double Side
         {
             get { return side; }
+            set { side = value; }
         }
     }
 }
