@@ -15,5 +15,13 @@ namespace _02_01_setter_newfile.model
         /// </summary>
         private double side;
 
+        /// <summary>
+        /// S1.04 Négyzetet oldalával létrehozó konstruktor.
+        /// </summary>
+        /// <param name="side">A négyzet oldala.</param>
+        public Square(double side)
+        {
+            this.side = side;
+        }
     }
 }
