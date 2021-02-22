@@ -11,6 +11,9 @@
 
 using System;
 
+//S1 .10 A Square osztály eléréséhez használatba kell venni a modell mappát. 
+using _02_01_setter_newfile.model;
+
 namespace _02_01_setter_newfile
 {
     class Program
