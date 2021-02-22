@@ -33,5 +33,16 @@ namespace _02_01_setter_newfile.model
             get { return side; }
             set { side = value; }
         }
+        /// <summary>
+        /// S1.07 A négyzet kerület tulajdonsága. Csak olvasható.
+        /// </summary>
+        public double District
+        {
+            get
+            {
+                double district = 4 * side;
+                return district;
+            }
+        }
     }
 }
