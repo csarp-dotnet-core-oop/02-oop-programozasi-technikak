@@ -55,6 +55,13 @@ namespace _02_01_setter_newfile.model
                 return area;
             }
         }
-
+        /// <summary>
+        /// S1.09 A négyzet adatait ilyen szövegként jelenítjük meg.
+        /// </summary>
+        /// <returns>A négyzet odlala és a hozzá tartozó szöveg.</returns>
+        public override string ToString()
+        {
+            return side + " méter a négyzet oldala.";
+        }
     }
 }
