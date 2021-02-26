@@ -28,7 +28,10 @@ namespace _02_02_exception_debug.model
                 // S2.03 SqueraSideCannotBeNagativOrZero saját kivétel.
                 //       A saját kivétel nevét beszédesre választjuk.
                 //       A paraméterbe a kivétel szövege kerül.
-                throw SqueraSideCannotBeNagativOrZero(side + " oldalú négyzet nincs. A négyzetet nem jön létre.");
+                // S2.04 A saját kivételt az IDE segítségével egy új fájlba legyártjuk.
+                //       A saját kivételt a new utasítással példányosítjuk.
+                //       Elékészül a SqueraSideCannotBeNagativOrZero.cs állomány.
+                throw new SqueraSideCannotBeNagativOrZero(side + " oldalú négyzet nincs. A négyzetet nem jön létre.");
             this.side = side;
         }
 
