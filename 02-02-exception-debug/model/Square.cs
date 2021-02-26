@@ -46,7 +46,12 @@ namespace _02_02_exception_debug.model
             }
             set
             {
-                  side = value;
+                // S2.05 Módosításkor is megadhatunk negatív oldalt.
+                //       Ha a négyzet oldala negatív vagy nulla kivételt dobunk.
+                //       Használhatjuk a már megírt kivételt!
+                if (value <= 0)
+                    throw new SqueraSideCannotBeNagativOrZero(value + " méretre a négyzet oldalát nem lehet változtatni. A négyzet oldala maradt " + side + ".");
+                side = value;
             }
         }
 
