@@ -1,6 +1,9 @@
 ﻿using System;
-
 using _02_02_exception_debug.model;
+
+// S2 .12 A hibát loggolhatjuk a consolra.
+using System.Diagnostics;
+
 
 namespace _02_02_exception_debug
 {
@@ -35,6 +38,9 @@ namespace _02_02_exception_debug
             {
                 // S2.08 A kivétel szövegét megjeleníthetjük a képernyőn.
                 Console.WriteLine(negativeOrZeroException.Message);
+                // S2.12 A hibát loggolhatjuk a consolra.
+                //       Kell hozzáa a using System.Diagnostics;
+                Debug.WriteLine(negativeOrZeroException.Message);
             }
             // S2.09 catch ágból lehet több.
             //       Elkapunk bármilyen más kivételt.
@@ -42,6 +48,8 @@ namespace _02_02_exception_debug
             {
                 // S2.10 A hibát loggolhatjuk a consolra.
                 Console.WriteLine(anyException.Message);
+                // S2.12 A hibát loggolhatjuk a consolra.
+                Debug.WriteLine(anyException.Message);
             }
             // S2.11 A try blokk után állhat egy finally blokk is.
             //       A finally blokk opcionális része a kivételkezelésnek.
