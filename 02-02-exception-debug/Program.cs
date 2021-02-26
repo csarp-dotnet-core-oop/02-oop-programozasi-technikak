@@ -43,6 +43,13 @@ namespace _02_02_exception_debug
                 // S2.10 A hibát loggolhatjuk a consolra.
                 Console.WriteLine(anyException.Message);
             }
+            // S2.11 A try blokk után állhat egy finally blokk is.
+            //       A finally blokk opcionális része a kivételkezelésnek.
+            //       A benne elhelyezett kód akkor is lefut, ha a vezérlés átkerül a catch blokkba.
+            //       Leginkább olyan esetekben van értelme a használatának,
+            //       ha kivétel esetén is fel szeretnénk szabadítani az erőforrást, amit használunk.
+            finally
+            { }
         }
     }
 }
