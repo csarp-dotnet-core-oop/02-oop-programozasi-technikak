@@ -36,6 +36,11 @@ namespace _02_02_exception_debug
                 // S2.08 A kivétel szövegét megjeleníthetjük a képernyőn.
                 Console.WriteLine(negativeOrZeroException.Message);
             }
+            // S2.09 catch ágból lehet több.
+            //       Elkapunk bármilyen más kivételt.
+            catch (Exception anyException)
+            {
+            }
         }
     }
 }
