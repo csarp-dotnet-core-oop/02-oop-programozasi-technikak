@@ -26,4 +26,14 @@ namespace _02_02_exception_debug
             {
                 Square myBadSquare = new Square(wrongSide);
             }
+            // S2.07 Elkapjuk a saját kivételünket
+            //       Ha a program végrehajtása közben valami hiba lép fel,
+            //       akkor a try blokkhoz rendelt catch hibakezelőbe akkor kerül a vezérlés,
+            //       ha a catch feltételben meghatározott típusú hiba lép fel.
+            //       Ha nem kapjuk el a kivételt, a program végrehajtása megszakad.
+            catch (SqueraSideCannotBeNagativOrZero negativeOrZeroException)
+            {
+            }
+        }
+    }
 }
