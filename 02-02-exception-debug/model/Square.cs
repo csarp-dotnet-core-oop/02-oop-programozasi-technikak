@@ -25,7 +25,10 @@ namespace _02_02_exception_debug.model
                 // S2.02 thwow -> kivétel dobás
                 //       Kivétel dobódásakor az adott utasítássorozat végrehajtása megszakad,
                 //       és a vezérlés átadódik a kivételkezelő blokkokhoz.
-                throw
+                // S2.03 SqueraSideCannotBeNagativOrZero saját kivétel.
+                //       A saját kivétel nevét beszédesre választjuk.
+                //       A paraméterbe a kivétel szövege kerül.
+                throw SqueraSideCannotBeNagativOrZero(side + " oldalú négyzet nincs. A négyzetet nem jön létre.");
             this.side = side;
         }
 
