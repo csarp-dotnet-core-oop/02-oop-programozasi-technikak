@@ -33,6 +33,8 @@ namespace _02_02_exception_debug
             //       Ha nem kapjuk el a kivételt, a program végrehajtása megszakad.
             catch (SqueraSideCannotBeNagativOrZero negativeOrZeroException)
             {
+                // S2.08 A kivétel szövegét megjeleníthetjük a képernyőn.
+                Console.WriteLine(negativeOrZeroException.Message);
             }
         }
     }
