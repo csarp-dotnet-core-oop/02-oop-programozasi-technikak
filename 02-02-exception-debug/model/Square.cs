@@ -20,7 +20,13 @@ namespace _02_02_exception_debug.model
         /// <param name="side">A négyzet oldala</param>
         public Square(double side)
         {
-              this.side = side;
+            // S2.02 Ha a négyzet oldala negatív vagy nulla kivételt dobunk.                   
+            if (side <= 0)
+                // S2.02 thwow -> kivétel dobás
+                //       Kivétel dobódásakor az adott utasítássorozat végrehajtása megszakad,
+                //       és a vezérlés átadódik a kivételkezelő blokkokhoz.
+                throw
+            this.side = side;
         }
 
         /// <summary>
