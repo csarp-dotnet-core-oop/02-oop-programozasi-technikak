@@ -40,6 +40,8 @@ namespace _02_02_exception_debug
             //       Elkapunk bármilyen más kivételt.
             catch (Exception anyException)
             {
+                // S2.10 A hibát loggolhatjuk a consolra.
+                Console.WriteLine(anyException.Message);
             }
         }
     }
