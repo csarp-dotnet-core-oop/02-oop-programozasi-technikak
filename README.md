@@ -14,4 +14,16 @@ S1.08           A négyzet terület tulajdonsága. Csak olvasható.
 S1.09           A négyzet adatait ilyen szövegként jelenítjük meg.  
 S1.10           A Square osztály eléréséhez használatba kell venni a modell mappát.  
 S1.11           A megírt kódok tesztelése.  
-
+### 02-02-exception-debug branch
+S2.01           Negatív oldalú négyzetet is példányosítani lehet!
+S2.02           Ha a négyzet oldala negatív vagy nulla kivételt dobunk.
+S2.03           SqueraSideCannotBeNagativOrZero saját kivétel.
+S2.04           A saját kivételt az IDE segítségével egy új fájlba
+S2.05           Módosításkor is megadhatunk negatív oldalt.
+S2.06           Ha negatív oldalú négyzetet példaányosítunk akkor elkapjuk a kivételt.
+S2.07           Elkapjuk a saját kivételünket
+S2.08           A kivétel szövegét megjeleníthetjük a képernyőn.
+S2.09           catch ágból lehet több.
+S2.10           A hibát loggolhatjuk a consolra.
+S2.11           A try blokk után állhat egy finally blokk is.
+S2.12           A hibát loggolhatjuk a consolra.
