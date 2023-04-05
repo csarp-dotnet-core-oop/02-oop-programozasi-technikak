@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _02_01_setter_newfile.model
+namespace _02_01_setter_newfile.Model
 {
     /// <summary>
     /// S1.02 Sqare osztály a model rétegben és a Square.cs állományban.
@@ -13,7 +13,7 @@ namespace _02_01_setter_newfile.model
         /// <summary>
         /// S1.03 A négyzet oldala.
         /// </summary>
-        private double side;
+        private double _side;
 
         /// <summary>
         /// S1.04 Négyzetet oldalával létrehozó konstruktor.
@@ -21,7 +21,7 @@ namespace _02_01_setter_newfile.model
         /// <param name="side">A négyzet oldala.</param>
         public Square(double side)
         {
-            this.side = side;
+            this._side = side;
         }
         /// <summary>
         /// S1.05 Side tulajdonság get metódussal.
@@ -30,8 +30,8 @@ namespace _02_01_setter_newfile.model
         /// </summary>
         public double Side
         {
-            get { return side; }
-            set { side = value; }
+            get { return _side; }
+            set { _side = value; }
         }
         /// <summary>
         /// S1.07 A négyzet kerület tulajdonsága. Csak olvasható.
@@ -40,7 +40,7 @@ namespace _02_01_setter_newfile.model
         {
             get
             {
-                double district = 4 * side;
+                double district = 4 * _side;
                 return district;
             }
         }
@@ -51,7 +51,7 @@ namespace _02_01_setter_newfile.model
         {
             get
             {
-                double area = side * side;
+                double area = _side * _side;
                 return area;
             }
         }
@@ -61,7 +61,7 @@ namespace _02_01_setter_newfile.model
         /// <returns>A négyzet odlala és a hozzá tartozó szöveg.</returns>
         public override string ToString()
         {
-            return side + " méter a négyzet oldala.";
+            return _side + " méter a négyzet oldala.";
         }
     }
 }
