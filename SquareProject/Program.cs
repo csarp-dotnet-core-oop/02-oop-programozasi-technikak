@@ -7,28 +7,16 @@ Az osztály a projekt model rétegében készítse el egy külön fájlba!
 
 using SquareProject.Models;
 
-Square mySquare = new Square(-2);
-Console.WriteLine(mySquare);
-Console.WriteLine("Kerülete: " + mySquare.Perimeter + " méter.");
-Console.WriteLine("Területe: " + mySquare.Area + " négyzetméter.");
+int wrongSide = -2;
+try
+{
+    Square mySquare = new Square(wrongSide);
+    Console.WriteLine(mySquare);
+    Console.WriteLine("Kerülete: " + mySquare.Perimeter + " méter.");
+    Console.WriteLine("Területe: " + mySquare.Area + " négyzetméter.");
+}
+catch (SqueraSideCannotBeNagativOrZero negativeOrZeroException)
+{
+    Console.WriteLine(negativeOrZeroException.Message);
+}
 
-// A négyzet oldalát módosítani lehet
-mySquare.Side = 5;
-
-Console.WriteLine(mySquare);
-Console.WriteLine("Kerülete: " + mySquare.Perimeter + " méter.");
-Console.WriteLine("Területe: " + mySquare.Area + " négyzetméter.");
-
-// A konyhába és a fürdőszobába szeretnénk padló csempét
-Square myKitchen = new Square(4);
-Square myBathroom = new Square(5);
-// A négyzet oldalát módosítani lehet. Legyen nagyobb a konyha.
-myKitchen.Side = 6;
-double areaToBeTiled = myKitchen.Area + myBathroom.Area;
-
-Console.WriteLine();
-Console.WriteLine("Konyha, " + myKitchen);
-Console.WriteLine("Konyha területe: " + myKitchen.Area + " négyzetméter.");
-Console.WriteLine("Fürdőszoba, " + myBathroom);
-Console.WriteLine("Fürdőszoba területe: " + myBathroom.Area + " négyzetméter.");
-Console.WriteLine("Csempézve lesz: " + areaToBeTiled + " négyzetméter.");
