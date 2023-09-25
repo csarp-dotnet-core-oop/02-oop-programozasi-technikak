@@ -7,7 +7,7 @@ Az osztály a projekt model rétegében készítse el egy külön fájlba!
 
 using SquareProject.Models;
 
-Square mySquare = new Square(2);
+Square mySquare = new Square(-2);
 Console.WriteLine(mySquare);
 Console.WriteLine("Kerülete: " + mySquare.Perimeter + " méter.");
 Console.WriteLine("Területe: " + mySquare.Area + " négyzetméter.");
