@@ -5,7 +5,8 @@
         private double _side;
         public double Side
         {
-            get => _side;
+            get => _side; 
+            set => _side = value;
         }
 
         public Square(double side)
