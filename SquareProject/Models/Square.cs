@@ -13,7 +13,12 @@ namespace SquareProject.Models
 
         public Square(double side)
         {
-            _side = side;
+            if (side <= 0)
+                throw new SqueraSideCannotBeNagativOrZero(side + " oldalú négyzet nincs. A négyzetet nem jön létre.");
+            else
+                _side = side;
+            
+
         }
 
         public double Perimeter
