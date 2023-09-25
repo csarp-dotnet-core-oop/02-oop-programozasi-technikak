@@ -25,5 +25,10 @@ namespace SquareProject.Models
         {
             get => _side * _side;
         }
+
+        public override string ToString()
+        {
+            return $"{Side} méter a négyzet oldala.\nKerülete {Area}.\nTerülete {Area}.";
+        }
     }
 }
