@@ -2,5 +2,6 @@
 {
     public class Square
     {
+        private double _side;
     }
 }
