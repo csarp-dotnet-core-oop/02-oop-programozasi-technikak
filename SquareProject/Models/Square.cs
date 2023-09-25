@@ -7,8 +7,14 @@ namespace SquareProject.Models
         private double _side;
         public double Side
         {
-            get => _side; 
-            set => _side = value;
+            get => _side;
+            set
+            {
+                if (value <= 0)
+                    throw new SqueraSideCannotBeNagativOrZero(value + " méretre a négyzet oldalát nem lehet változtatni. A négyzet oldala maradt " + _side + ".");
+                else
+                    _side = value;
+            }
         }
 
         public Square(double side)
