@@ -6,6 +6,7 @@ Az osztály a projekt model rétegében készítse el egy külön fájlba!
 
 
 using SquareProject.Models;
+using System.Diagnostics;
 
 int wrongSide = -2;
 try
@@ -18,10 +19,12 @@ try
 catch (SqueraSideCannotBeNagativOrZero negativeOrZeroException)
 {
     Console.WriteLine(negativeOrZeroException.Message);
+    Debug.WriteLine(negativeOrZeroException.Message);
 }
 catch (Exception anyException)
 {
     Console.WriteLine(anyException.Message);
+    Debug.WriteLine(anyException.Message);
 }
 finally
 { }
