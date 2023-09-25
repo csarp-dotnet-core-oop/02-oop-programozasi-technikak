@@ -1,4 +1,6 @@
-﻿namespace SquareProject.Models
+﻿using System.Drawing;
+
+namespace SquareProject.Models
 {
     public class Square
     {
@@ -12,6 +14,11 @@
         public Square(double side)
         {
             _side = side;
+        }
+
+        public double Perimeter
+        {
+            get => 4 * _side;
         }
     }
 }
