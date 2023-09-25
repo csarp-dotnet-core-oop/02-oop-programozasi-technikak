@@ -23,4 +23,6 @@ catch (Exception anyException)
 {
     Console.WriteLine(anyException.Message);
 }
+finally
+{ }
 
