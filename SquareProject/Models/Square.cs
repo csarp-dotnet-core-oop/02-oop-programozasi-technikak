@@ -20,5 +20,10 @@ namespace SquareProject.Models
         {
             get => 4 * _side;
         }
+
+        public double Area
+        {
+            get => _side * _side;
+        }
     }
 }
