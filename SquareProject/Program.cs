@@ -19,4 +19,8 @@ catch (SqueraSideCannotBeNagativOrZero negativeOrZeroException)
 {
     Console.WriteLine(negativeOrZeroException.Message);
 }
+catch (Exception anyException)
+{
+    Console.WriteLine(anyException.Message);
+}
 
